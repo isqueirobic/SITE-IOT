@@ -1,0 +1,58 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #0e7a0d;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+    line-height: 1.8;
+}
+
+/* Caixa de conteúdo */
+
+
+/* Ajuste de fontes para dispositivos menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

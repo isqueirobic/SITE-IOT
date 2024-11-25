@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    color: white;
+    transition: background-color 5s, color 5s;
+}
+
+.Carrossel-container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    outline: 2px rgb(229, 255, 0) solid;
+}
+
+.Carrossel{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.Carro{
+    min-width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Carro h1{
+    margin: 10% 20px;
+    font-weight: 1000;
+}
+
+.Carro p{
+    font-weight: 600;
+    margin: 20% 40px;
+    font-size: 200%;
+    border-radius: 2%;
+}
+
+
+.ButonConatainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px 10%;
+    top: 90%;
+}
+
+.NextBoton{
+    border-radius: 20%;
+    background-color: #727272; 
+    color: white;              
+    border: none;               
+    padding: 10px 20px;        
+    text-align: center;  
+    text-decoration: none;
+    display: inline-block;      
+    font-size: 16px;    
+    margin: 4px 2px;            
+    cursor: pointer;            
+    border-radius: 5px;        
+}
+
+.PrevBoton{
+    border-radius: 20%;
+    background-color: #727272; 
+    color: white;              
+    border: none;               
+    padding: 10px 20px;        
+    text-align: center;  
+    text-decoration: none;
+    display: inline-block;      
+    font-size: 16px;    
+    margin: 4px 2px;            
+    cursor: pointer;            
+    border-radius: 5px;       
+}
+
+.EstrelaPreta{
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    left: 40px;
+}
+
+.EstrelaBranca{
+    transition: filter 3s ease;
+    filter: invert(100%) brightness(100%);
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/imgs/Estrelas/1.png');
+    background-size: cover;
+    z-index: -1;
+}

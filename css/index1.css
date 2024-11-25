@@ -1,0 +1,71 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(189, 189, 189);
+}
+
+.title{
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titletext{
+    text-align: center;
+    font-size: large;
+    background-color: rgb(42, 54, 163);
+    width: 130px;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+.fill-div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.Container{
+    display: flex;
+    gap: 10px;
+}
+.Tab{
+    width: 21vw;
+    height: 80vh;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.Tab:hover{
+    width: 50vw;
+}
+
+#ch{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(19, 86, 209);
+    color: white;
+}
+
+#cn{
+    background-color: rgb(19, 209, 19);
+}
+
+#lc{
+    background-color: rgb(171, 19, 209);
+}
+
+#mat{
+    background-color: rgb(202, 23, 23);
+}
+
+#iot{
+    background-color: rgb(255, 145, 0);
+}
+
+#pessoal{
+    background-color: gold;
+}

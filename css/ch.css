@@ -1,0 +1,23 @@
+body{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.Card{
+    margin: 10px;
+    height: 100%;
+}
+
+.Content{
+    border: 5px solid rgb(138, 138, 138);
+    border: 5px solid #0e7a0d;
+    background-color: #0e7a0d;
+}
+
+
+
+
+.TextoAmostra{
+    font-size: larger;
+}
+

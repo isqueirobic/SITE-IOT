@@ -1,0 +1,227 @@
+@font-face {
+    font-family: skatefont;
+    src: url(/fonte/Hawkeye-mLZxx.ttf);
+}
+
+body{
+    font-family: skatefont;
+    color: #b2deff;
+    background-color: black;
+}
+
+.backgroundimage1{
+    width: 100%;
+    max-width: 100vw;
+    height: 93%;        
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.2);
+    z-index: -1;
+    position: absolute;
+    background-color: black;
+    overflow: hidden;
+}
+
+.backgroundimage1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.Container{
+    /*
+    border: 2px green solid;
+    */
+    display: flex;
+    width: 80vw;
+    margin: 20px 100px;
+    justify-content: left;
+    gap: 100px;
+}
+
+.Item-Container{
+    /*
+    border: 2px blue solid;
+    */
+}
+
+.Item-Container:hover .Title{
+    animation: piscapisca 0.2s infinite alternate;
+}
+
+.Item-Container:hover .Item-Icon{
+    transition: height 1s ease;
+    height: 60%;
+}
+
+.Item-Icon{
+    /*
+    border: 2px gray solid;
+    */ 
+    display: flex;
+    margin: -1px 10px;
+   
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.Item-Icon:hover .Item{
+    height: auto;
+}
+
+.Item{
+    /*
+    border: 2px yellow solid;
+    */
+    
+    height: 0px;
+    overflow: hidden;
+    margin: 0px 10px;
+}
+
+.Item:hover :nth-child(1){
+    animation: piscapisca 0.2s infinite alternate;
+}
+
+.Item:hover :nth-child(2){
+   color: #0099ff;
+}
+
+/*006eff*/
+
+.Image{
+    position: absolute; /* Fixa o elemento em relação à janela do navegador */
+    bottom: 10px;    /* Distância da parte inferior da página */
+    right: 10px;     /* Distância do lado direito da página */
+    color: white;
+    margin: -28px 90px;
+    border-radius: 5px;
+}
+
+.Image img{
+    width: 150%;
+    height: 150%;
+}
+
+@keyframes piscapisca {
+    0%{
+        text-shadow: 
+            0 0 5px #0084ff,
+            0 0 10px #0084ff,
+            0 0 20px #0084ff,
+            0 0 30px #0084ff,
+            0 0 40px #0084ff;
+    }
+
+    20%{
+        text-shadow: 
+        0 0 5px #0099ff,
+        0 0 10px #0099ff,
+        0 0 20px #0099ff,
+        0 0 30px #0099ff,
+        0 0 40px #0099ff;
+    }
+
+    40%{
+        text-shadow: 
+        0 0 5px #006eff,
+        0 0 10px #006eff,
+        0 0 20px #006eff,
+        0 0 30px #006eff,
+        0 0 40px #006eff;
+    }
+
+    60%{
+        text-shadow: 
+        0 0 5px #006eff,
+        0 0 10px #006eff,
+        0 0 20px #006eff,
+        0 0 30px #006eff,
+        0 0 40px #006eff;
+    }
+
+    80%{
+        text-shadow: 
+        0 0 5px #0059ff,
+        0 0 10px #0059ff,
+        0 0 20px #0059ff,
+        0 0 30px #0059ff,
+        0 0 40px #0059ff;
+    }
+
+    100%{
+        text-shadow: 
+        0 0 5px #0084ff,
+        0 0 10px #0084ff,
+        0 0 20px #0084ff,
+        0 0 30px #0084ff,
+        0 0 40px #0084ff;
+    }
+}
+
+#item-neom{
+    animation: piscapisca 0.2s infinite alternate;
+}
+
+@keyframes piscapiscalaranja {
+    0%{
+        text-shadow: 
+            0 0 5px #ff9100,
+            0 0 10px #ff9100,
+            0 0 20px #ff9100,
+            0 0 30px #ff9100,
+            0 0 40px #ff9100;
+    }
+
+    20%{
+        text-shadow: 
+        0 0 5px #ffa600
+        0 0 10px #ffa600,
+        0 0 20px #ffa600,
+        0 0 30px #ffa600,
+        0 0 40px #ffa600;
+    }
+
+    40%{
+        text-shadow: 
+        0 0 5px #ff7b00,
+        0 0 10px #ff7b00,
+        0 0 20px #ff7b00,
+        0 0 30px #ff7b00,
+        0 0 40px #ff7b00;
+    }
+
+    60%{
+        text-shadow: 
+        0 0 5px #ff7b00,
+        0 0 10px #ff7b00,
+        0 0 20px #ff7b00,
+        0 0 30px #ff7b00,
+        0 0 40px #ff7b00;
+    }
+
+    80%{
+        text-shadow: 
+        0 0 5px #ffc400,
+        0 0 10px #ffc400,
+        0 0 20px #ffc400,
+        0 0 30px #ffc400,
+        0 0 40px #ffc400;
+    }
+
+    100%{
+        text-shadow: 
+            0 0 5px #ff9100,
+            0 0 10px #ff9100,
+            0 0 20px #ff9100,
+            0 0 30px #ff9100,
+            0 0 40px #ff9100;
+    }
+}
+
+#item-neom-laranja{
+    animation: piscapiscalaranja 0.2s infinite alternate;
+    background-color: transparent;
+    color: #ffee00;
+    scale: 1.4;
+}
